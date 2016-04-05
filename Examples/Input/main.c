@@ -14,11 +14,11 @@
 int main(void)
 {
     // Initiates PD5 and PD6 as OUTPUT
-    set_bit(DDRD,5);
-    set_bit(DDRD,6);
+    DDRD |= (1 << PD5);
+    DDRD |= (1 << PD6);
 
     // Sets PF0 as input with pullup resistor
-    clear_bit(DDRF,0); 
+    DDRF &= ~(1 << PF0);
     set_bit(PORTF,0);
 
     while(1)
