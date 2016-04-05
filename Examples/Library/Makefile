@@ -1,4 +1,4 @@
-#Taken from github.com/hexagon5un/avr-programming
+#Taken from github.com/hexagon5un/avr-programming - Changed for use with a 32u4
 
 ##########------------------------------------------------------##########
 ##########              Project-specific Details                ##########
