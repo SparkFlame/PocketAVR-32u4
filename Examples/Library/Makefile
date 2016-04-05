@@ -164,9 +164,9 @@ flash_109: flash
 ##########------------------------------------------------------##########
 
 ## Mega 48, 88, 168, 328 default values
-LFUSE = 0x62
-HFUSE = 0xdf
-EFUSE = 0x00
+LFUSE = 0x5E
+HFUSE = 0x99
+EFUSE = 0xF3
 
 ## Generic 
 FUSE_STRING = -U lfuse:w:$(LFUSE):m -U hfuse:w:$(HFUSE):m -U efuse:w:$(EFUSE):m 
@@ -183,15 +183,15 @@ set_default_fuses:  fuses
 
 ## Set the fuse byte for full-speed mode
 ## Note: can also be set in firmware for modern chips
-set_fast_fuse: LFUSE = 0xE2
-set_fast_fuse: FUSE_STRING = -U lfuse:w:$(LFUSE):m 
-set_fast_fuse: fuses
+#set_fast_fuse: LFUSE = 0xE2
+#set_fast_fuse: FUSE_STRING = -U lfuse:w:$(LFUSE):m 
+#set_fast_fuse: fuses
 
 ## Set the EESAVE fuse byte to preserve EEPROM across flashes
-set_eeprom_save_fuse: HFUSE = 0xD7
-set_eeprom_save_fuse: FUSE_STRING = -U hfuse:w:$(HFUSE):m
-set_eeprom_save_fuse: fuses
+#set_eeprom_save_fuse: HFUSE = 0xD7
+#set_eeprom_save_fuse: FUSE_STRING = -U hfuse:w:$(HFUSE):m
+#set_eeprom_save_fuse: fuses
 
 ## Clear the EESAVE fuse byte
-clear_eeprom_save_fuse: FUSE_STRING = -U hfuse:w:$(HFUSE):m
-clear_eeprom_save_fuse: fuses
+#clear_eeprom_save_fuse: FUSE_STRING = -U hfuse:w:$(HFUSE):m
+#clear_eeprom_save_fuse: fuses
