@@ -10,7 +10,7 @@ void initDDRB () {
 
 int main () {
   //Setup
-  initDDRB(0xFF);    //Calls for setup of PB0
+  initDDRB();    //Calls for setup of PB0
   
   //Loop
   while (1){
