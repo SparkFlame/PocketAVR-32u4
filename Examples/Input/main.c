@@ -2,38 +2,29 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-// Macros to make bit manipulation easier
-#define set_bit(address,bit) (address |= (1<<bit))
-#define clear_bit(address,bit) (address &= ~(1<<bit))
-#define toggle_bit(address,bit) (address ^= (1<<bit))
-
-// This macro is for checking if a certain bit is set in a given register.
-// This is useful here for checking the status of individual input pins.
-#define check_bit(address,bit) ((address & (1<<bit)) == (1<<bit))
-
 int main(void)
 {
     // Initiates PD5 and PD6 as OUTPUT
-    DDRD |= (1 << PD5);
-    DDRD |= (1 << PD6);
+    DDRD |= (1 << DDD5);
+    DDRD |= (1 << DDD6);
 
     // Sets PF0 as input with pullup resistor
     DDRF &= ~(1 << PF0);
-    set_bit(PORTF,0);
+    PORTF |= (1 << PORTF0);
 
     while(1)
     {
         // PINF is the register you have to read to check if a particular
         // pin on port F (PFx) is HIGH or LOW
-        if(check_bit(PINF,0))
+        if((PINF & (1 << PINF0)) == (1 << 0))
         {
             // If PF0 is HIGH, toggle pin PD5's output status
-            toggle_bit(PORTD,5);
+            PORTD ^= (1<<PORTD5)
         }
         else
         {
             // If PF0 is LOW, toggle pin PD6's output status
-            toggle_bit(PORTD,6);
+            PORTD ^= (1<<PORTD6)
         }
 
         _delay_ms(1000); // Delay 1 second before checking PF0 again
