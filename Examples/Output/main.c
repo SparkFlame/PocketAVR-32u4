@@ -1,5 +1,5 @@
 //Includes
-#include <avrio.h>
+#include <avr/io.h>
 #include <util/delay.h>
 
 //This function will setup DDRB for output on PB0
