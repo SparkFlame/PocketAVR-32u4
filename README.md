@@ -28,7 +28,7 @@ In this Repository you will find test software for hardware based on the Atmel A
              please donate at http://www.lufa-lib.org/donate
 
                Released under a modified MIT license - see
-                  [LUFA/License.txt] (https://github.com/abcminiuser/lufa)at  for license details.
+                  [LUFA/License.txt] (https://github.com/abcminiuser/lufa) at  for license details.
 
                 For Commercial Licensing information, see
                      http://www.lufa-lib.org/license
