@@ -1,14 +1,14 @@
-##SparkFlame License Information
+##ComputerAided License Information
 
-SparkFlame uses different licenses for its file - one for hardware and one for code.
+ComputerAided uses different licenses for its file - one for hardware and one for code.
 
 ###Software
 
-**SparkFlame code, firmware, and software is released under the MIT License(http://opensource.org/licenses/MIT).**
+**ComputeAided code, firmware, and software is released under the MIT License(http://opensource.org/licenses/MIT).**
 
 The MIT License (MIT)
 
-Copyright (c) 2016 SparkFlame
+Copyright (c) 2016 ComputerAided
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ SOFTWARE.
 
 ###Hardware
 
-**SparkFlame hardware is released under [Creative Commons Share-alike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).**
+**ComputerAided hardware is released under [Creative Commons Share-alike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).**
 
 Note: This is a human-readable summary of (and not a substitute for) the [license](http://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
