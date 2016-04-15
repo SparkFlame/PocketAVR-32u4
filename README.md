@@ -73,4 +73,6 @@ installed.
 
 __4-10-16__ Added Hardware schematic, board, and BOM to repository.
 
-__4-13-16__ Changed Hardware Schematic to an updated v1.1. Silkscreen to be added soon.
+__4-13-16__ Changed Hardware Schematic to an updated v1.1.
+
+__4-14-16__ Added new board with silkscreen
