@@ -77,6 +77,4 @@ __4-13-16__ Changed Hardware Schematic to an updated v1.1.
 
 __4-14-16__ Added new board with silkscreen
 
-__4-15-16__ Changed main.c in input - do not know yet if it works.
-
 __4-16-16__ Added new board
