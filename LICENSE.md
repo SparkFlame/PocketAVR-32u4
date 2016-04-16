@@ -1,6 +1,6 @@
 ##ComputerAided License Information
 
-ComputerAided uses different licenses for its file - one for hardware and one for code.
+ComputerAided uses different licenses for its files - one for hardware and one for code.
 
 ###Software
 
