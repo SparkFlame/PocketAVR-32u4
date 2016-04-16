@@ -15,7 +15,7 @@ int main(void)
     while(1)
     {
         // PINF is the register you have to read to check if a particular
-        // pin on port F (PFx) is HIGH or LOW
+        // pin on port F is HIGH or LOW
         if((PINF & (1 << PINF0)) == (1 << 0))
         {
             // If PF0 is HIGH, toggle pin PD5's output status
